@@ -3,13 +3,13 @@ let draws = 0;
 let wins = 0;
 let losses = 0;
 
-// Selections
+// DOM
 const choiceButtons = document.querySelectorAll(`div[data-choice]`);
 const resultText = document.getElementById("result-box-text");
 const resultNumber = document.getElementById("result-box-number");
 const resetButton = document.getElementById("reset-btn");
 
-// Function randomly generates a value which is either rock, paper or scissor, returns value.
+// Computer chooses rock, paper or scissor
 function computerPlay() {
     let gameChoices = ['rock', 'paper', 'scissor']
     return gameChoices[Math.floor(Math.random() *3)];
@@ -26,7 +26,7 @@ function gameReset() {
 }
 
 
-// Function compares both inputs and decides on a win, loss or draw.
+// Check for win, loss or draw
 function playRound(a, b) {
     if (a === b) {
         resultText.innerHTML = `You chose ${userSelection}, the computer chose ${computerSelection}, it's a draw.`
