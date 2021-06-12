@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Rock Paper Scissor</title>
+  <meta name="description" content="Rock Paper Scissor">
+  <meta name="author" content="Nick de Groot">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <container class ="container">
+    <header>
+      <h1 class="center-text">Rock Paper Scissor</h1>
+      <h2 class="center-text">by: Nick de Groot</h2>
+    </header>
+    <main class="center-text">
+      <div class="info-box">
+        <p>Please choose one of the three options below</p>
+      </div>
+      <div class = choices-box>
+        <div data-choice="rock" class="column btn">
+          <button>Rock</button>
+        </div>
+        <div data-choice="paper" class="column btn">
+          <button>Paper</button>
+        </div>
+        <div data-choice="scissor" class="column btn">
+          <button>Scissor</button>
+        </div>
+      </div>
+      <div class="result-box">
+        <div id="result-box-text">No games played yet</div>
+        <div id="result-box-number">0 wins - 0 losses - 0 draws</div>
+      </div>
+      <div id="options-box">
+        <button id="reset-btn">Reset</button>
+      </div>
+    </main>
+  </container>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
